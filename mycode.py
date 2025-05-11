@@ -8,8 +8,13 @@ data_dict = {
     'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
 }
 
+
 # Step 2: Convert dictionary to DataFrame
 df = pd.DataFrame(data_dict)
+
+# Adding new row to df for DVC V2
+new_row = {'Name':"Linda", "Age":28, "City": "New York"}
+df.loc[len(df.index)] = new_row
 
 # Step 3: Create a folder named 'data' (use exist_ok=True to avoid errors if it exists)
 folder_name = 'data'
