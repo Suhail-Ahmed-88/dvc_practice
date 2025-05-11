@@ -20,3 +20,9 @@ This repo is for practice data version control
 14. Then git add-commit-push (we're saving V2 of our data at this point)
 15. Check dvc/git status, everything should be upto date.
 16. Now repeat step 10-12 for v3 of data.
+
+git log --oneline
+
+git checkout `<hash> -git checkout master`
+
+dvc pull
