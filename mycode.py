@@ -16,6 +16,10 @@ df = pd.DataFrame(data_dict)
 new_row = {'Name':"Linda", "Age":28, "City": "New York"}
 df.loc[len(df.index)] = new_row
 
+# Adding new row to df for DVC V3
+new_row2 = {'Name':"Lisa", "Age":22, "City": "Chicago"}
+df.loc[len(df.index)] = new_row2
+
 # Step 3: Create a folder named 'data' (use exist_ok=True to avoid errors if it exists)
 folder_name = 'data'
 os.makedirs(folder_name, exist_ok=True)
